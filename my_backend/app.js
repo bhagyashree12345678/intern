@@ -26,7 +26,7 @@ const isLoggedIN = (req,res,next) =>{
   }
 }
 
-console.log(__dirname )
+
 app.use(express.static(path.join(__dirname, 'my-frontend')));
 
 app.use(passport.initialize());

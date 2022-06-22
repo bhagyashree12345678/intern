@@ -12,14 +12,17 @@ function InputArea(props) {
     // let history = useHistory();
     // history.push("/logout");
   }
+
+  // function click(){
+  //   const isDone = true;
+  //  setInputText( isDONE ? {style: "line-through"} : NULL;)
+
+  // }
   return (
     <div className="form">
       <input onChange={handleChange} type="text" value={inputText} />
       <button
-        onClick={() => {
-          props.OnAdd(inputText);
-          setInputText("");
-        }}
+        onClick={click}
       >
         <span>Add</span>
       </button>

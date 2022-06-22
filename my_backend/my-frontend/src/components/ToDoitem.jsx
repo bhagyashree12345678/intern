@@ -2,7 +2,7 @@ import React from "react";
 
 function ToDoItem(props) {
   return (
-    <div
+    <div style={{textDecoration: "line-through"}}
       onClick={() => {
         props.onChecked(props.id);
       }}
